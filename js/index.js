@@ -5,17 +5,6 @@ function getQuote() {
         .then((resp) => resp.json())
         .then(function (data) {
             document.getElementById("status").innerHTML = data.status;
-        
-            var container = document.querySelector('#container');
-            var ul = document.createElement('ul');
-
-            data.statuses.list.forEach(function (item) {
-                var li = document.createElement('li');
-
-                li.textContent = item;
-                ul.appendChild(li);
-            });
-
-            container.appendChild(ul);
+            document.getElementById("last_status").innerHTML = data.statuses.list[1];
         });
 }
