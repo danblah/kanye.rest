@@ -26,20 +26,6 @@
     <meta name="msapplication-TileImage" content="static/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <meta property="og:title" content="kanye.rest">
-    <meta property="og:site_name" content="kanye.rest">
-    <meta property="og:url" content="https://kanye.rest">
-    <meta property="og:description" content="A free REST API for random Kanye West quotes">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://kanye.rest/static/apple-icon.png">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="@ajzbc">
-    <meta name="twitter:url" content="https://kanye.rest">
-    <meta name="twitter:title" content="kanye.rest">
-    <meta name="twitter:description" content="A free REST API for random Kanye West quotes">
-    <meta name="twitter:image" content="https://kanye.rest/static/apple-icon.png">
-
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/chota.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/carbon.css" />
@@ -49,31 +35,19 @@
     <div class="wrapper">
         <nav class="nav">
             <div class="nav-left">
-                <a class="brand" href="../">🌊 kanye.rest</a>
-            </div>
-            <!-- <div class="nav-right">
-                <a class="button clear no-top noselect" href="https://www.buymeacoffee.com/ajzbc" target="_blank">☕️ Buy
-                    Me A Coffee!</a>
-            </div> -->
+                <a class="brand" href="../">👶 Baby Yet?</a>
         </nav>
         <div class="inner">
-            <p>A free REST API for random Kanye West quotes (Kanye as a Service)</p>
-            <h3 class="title">API Usage</h3>
+            <p>Has the baby come yet?</p>
+            <h3 class="title">Current status</h3>
             <div class="section">
                 <div class="row">
-                    <div class="col is-full is-marginless">
-                        <p class="demo is-center">GET&nbsp<a href="https://api.kanye.rest"
-                                target="_blank">https://api.kanye.rest</a></p>
-                    </div>
                     <div class="col is-full is-marginless is-center">
-                        <a class="button clear no-top noselect" id="tweet" target="_blank">📢 Tweet</a>
                         <a class="button clear no-top noselect" onclick="getQuote()">🔄 Refresh</a>
                     </div>
                 </div>
-                <code>{<div class="tab">"quote": "<span id="quote"></span>"</div>}</code>
+                <span id="quote"></span>
                 <br>
-                <p class="extra">Extra: <a href="https://api.kanye.rest?format=text"
-                        target="_blank">https://api.kanye.rest?format=text</a></p>
             </div>
 
             <!-- <div id="codefund">
